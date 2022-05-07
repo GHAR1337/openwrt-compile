@@ -12,3 +12,6 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+
+# Unlock the mtd
+sed '/read-only/d' target/linux/ramips/dts/*wt3020-8m*.dts
