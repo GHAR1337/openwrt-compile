@@ -12,3 +12,5 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+wget https://github.com/fabianhu/WT3020-16MB/raw/master/0001-WT3020-Add-support-for-16M-flash.patch
+patch -p1 < 0001-WT3020-Add-support-for-16M-flash.patch
